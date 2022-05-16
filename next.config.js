@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  ...nextConfig,
+  compiler: {
+    styledComponents: true,
+    swcMinify: true,
+  }
+}
+
+// nextConfig
